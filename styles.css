@@ -1,0 +1,254 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: hsl(30, 54%, 90%);
+    font-family: "Young Serif", serif;
+    font-size: 16px;
+}
+
+header{
+    width: auto;
+    height: 200px;
+}
+
+.container{
+    display:flexbox;
+    background: white;
+    width: 800px;
+    height: auto;
+    border: 1px solid  white;
+    margin: auto;
+    border-radius: 2%;
+    overflow: hidden;
+}
+
+img{
+    width: 700px;
+    margin-left: 50px;
+    margin-top: 30px;
+
+}
+
+.title{
+  margin-left: 50px;
+  display: flexbox;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.first{
+    font-size: 30px;
+    margin-top: 20px;
+    height: 30px;
+}
+
+.descrip{
+    margin-top: 20px;
+    font-size: 15px;
+    display: flex;
+    width: 600px;
+}
+
+.preparation-cont{
+    display: flexbox;
+    margin-top: 40px;
+    width: 700px;
+    height: 180px;
+    border-radius: 5%;
+    border: 1px solid hsl(330, 100%, 98%);
+    margin-left: 50px;
+    background: hsl(330, 100%, 98%);
+}
+
+.preparation-cont li{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.time{
+    margin-bottom: 20px;
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+.ingredients-cont{
+    border-bottom: 1px solid hsl(30, 10%, 34%);
+    width: 700px;
+    height: auto;
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+
+ol{
+    list-style-type: none;
+}
+
+.ingredients-cont li{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 70px;
+    justify-content: space-between;
+    
+}
+
+span{
+    display:flexbox;
+    margin-right: 2px;
+    font-size: 20px;
+    color: hsl(30, 10%, 34%);
+}
+
+.sub{
+    justify-content:space-evenly;
+    color: hsl(30, 10%, 34%);
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 10px;
+    width: 10px;
+}
+
+p{
+    display:inline;
+    width: 500px;
+    justify-content: space-between;
+    margin-right: 100px;
+}
+
+.title-ing{
+    font-size: 30px;
+    margin-left: 50px;
+    color: hsl(30, 10%, 34%);
+}
+
+.instructions-cont{
+    border-bottom: 1px solid hsl(30, 10%, 34%);
+    width: 700px;
+    height: auto;
+    margin-top: 40px;
+}
+
+.instructions-cont li{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 50px;
+}
+
+.nutrition-cont{
+    display: flexbox;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+.table-cont{
+    margin-top: 20px;
+    display: flex;
+    width: auto;
+    justify-content: center;
+    margin-left: 50px;
+    font-size: 15px;    
+}
+
+table{
+    margin: auto;
+    width: 650px;
+    margin-top: 15px;
+    border-collapse: collapse;
+   
+}
+
+td, th {
+    width: 200px;
+    padding: 10px;
+}
+
+/* Aplicar borde inferior solo a td y th que no están en la última fila */
+tr:not(:last-child) td,
+tr:not(:last-child) th {
+    border-bottom: 1px solid hsl(30, 10%, 34%);
+}
+
+
+footer{
+    width: auto;
+    height: 200px;
+}
+
+@media only screen and (max-width: 900px) {
+    .container {
+        width: 100%;
+        max-width: 800px;
+        flex-direction: column; /* Cambia a dirección de columna en dispositivos más pequeños */
+    }
+    
+    img {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .table-cont {
+        margin-left: 0;
+    }
+    
+    table {
+        width: 100%;
+    }
+    
+    td, th {
+        width: auto; /* Ajusta según sea necesario */
+    }
+
+    .descrip{
+        width: 100%;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .instructions-cont {
+        width: 100%;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .instructions-cont li {
+        margin-left: 20px; /* Ajuste para dispositivos más pequeños */
+    }
+
+    .ingredients-cont{
+        width: 100%;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ingredients-cont li{
+        margin-left: 20px;
+    }
+
+    .preparation-cont {
+        width: 100%;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .preparation-cont li {
+        margin-left: 0;
+        text-align: center;
+    }
+    
+    .time {
+        margin-left: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+
+}
